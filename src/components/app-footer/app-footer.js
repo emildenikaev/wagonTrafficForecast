@@ -5,7 +5,7 @@ const AppFooter = () => {
   return (
 
     <div className='app-footer'>
-      <div class="cover-foot"></div>
+      <div className="cover-foot"></div>
       <img src={require('../../assets/images/map.jpg')}  alt="Грузоперевозки в Москве" className='app-footer__icon'/>
   
       <a className="app-footer__info ">@ RusFuture 2022. Мы за качество!</a>
