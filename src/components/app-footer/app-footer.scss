@@ -1,0 +1,33 @@
+.app-footer {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-height: 200px;
+    font-size: 24px;
+    background-size: cover;
+}
+
+
+.cover-foot{
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  width: 100vw;
+}
+
+.app-footer__icon {
+  width: 100vw;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.app-footer__info {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

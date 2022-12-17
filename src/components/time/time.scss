@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+a {
+  color: #f1c40f;
+  &:visited {
+    color: #e1e3e6;
+  }
+  &:hover {
+    color: #666;
+  }
+}
+
+.count {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-bottom: 40px;
+}

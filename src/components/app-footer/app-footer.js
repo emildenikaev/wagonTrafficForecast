@@ -3,10 +3,17 @@ import './app-footer.scss';
 
 const AppFooter = () => {
   return (
-    <div className='app-footer d-flex'>
-      app-footer work!
+
+    <div className='app-footer'>
+      <div class="cover-foot"></div>
+      <img src={require('../../assets/images/map.jpg')}  alt="Грузоперевозки в Москве" className='app-footer__icon'/>
+  
+      <a className="app-footer__info ">@ RusFuture 2022. Мы за качество!</a>
+
     </div>
   )
 }
+
+ 
 
 export default AppFooter;
