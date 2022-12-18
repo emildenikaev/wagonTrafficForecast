@@ -135,7 +135,6 @@ class Time extends Component {
         rsv_dp_id: this.state.rsv_dp_id
       }
     };
-    console.log(data);
     axios
       .post("http://46.243.227.152:8000/data", data)
       .then(res =>  this.setState({ articleId: res.data.result }) )
@@ -258,22 +257,9 @@ class Time extends Component {
               onChange={this.onrsv_dp_idChange} required
             />
           </div>
-
-
-
-  
           <button className="app-btn double-border-button count btn" type="submit">Рассчитать</button>
         </form>
-        <h4 className='result'>Ориентировачное время: {articleId}</h4>
-        
-
-          
- 
-
-
-
-
-
+        <h4 className='result'>Ориентировачное время: {articleId}ч</h4>
       </div>
     );
   }
