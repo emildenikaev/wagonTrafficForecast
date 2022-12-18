@@ -35,3 +35,10 @@ ul {
 img {
   width: 100%;
 }
+.form-control {
+  border: 2px solid #f1c40f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}

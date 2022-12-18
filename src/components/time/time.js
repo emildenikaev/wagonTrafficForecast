@@ -149,117 +149,133 @@ class Time extends Component {
     return (
       <div className="info">
         <h3>Заполните все поля, чтобы отобразилось расчетное время пути</h3>
-        <form className="post" onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
 
           <div>
-            <label htmlFor="st_code_snd">Станции отправления: </label>
             <input id="st_code_snd"  name="st_code_snd"
+            className="form-control"
+            placeholder="Станции отправления: "
               value={this.state.st_code_snd}
-              onChange={this.onst_code_sndChange} required
+              onChange={this.onst_code_sndChange} required 
             />
-          </div>
+           </div>
 
           <div>
-            <label htmlFor="st_code_rsv">Станции назначения: </label>
             <input id="st_code_rsv"  name="st_code_rsv"
+            className="form-control"
+            placeholder="Станции назначения: "
               value={this.state.st_code_rsv}
               onChange={this.onst_code_rsvChange} required
             />
           </div>
              <div>
-            <label htmlFor="date_depart_month">Месяц отправления: </label>
             <input id="date_depart_month"  name="date_depart_month"
+            className="form-control"
+            placeholder="Месяц отправления: "
               value={this.state.date_depart_month}
               onChange={this.ondate_depart_monthChange} required
             />
           </div>
              <div>
-            <label htmlFor="date_depart_day">День отправления: </label>
             <input id="date_depart_day"  name="date_depart_day"
+            className="form-control"
+            placeholder="День отправления: "
               value={this.state.date_depart_day}
               onChange={this.ondate_depart_dayChange} required
             />
           </div>
              <div>
-            <label htmlFor="fr_id">id груза: </label>
             <input id="fr_id"  name="fr_id"
+            className="form-control"
+            placeholder="id груза: "
               value={this.state.fr_id}
               onChange={this.onfr_idChange} required
             />
           </div>
              <div>
-            <label htmlFor="route_type">Тип отправки: </label>
             <input id="route_type"  name="route_type"
+            className="form-control"
+            placeholder="Тип отправки: "
               value={this.state.route_type}
               onChange={this.onroute_typeChange} required
             />
           </div>
              <div>
-            <label htmlFor="is_load">Признак гружёности: </label>
             <input id="is_load"  name="is_load"
+            className="form-control"
+            placeholder="Признак гружёности: "
               value={this.state.is_load}
               onChange={this.onis_loadChange} required
             />
           </div>
              <div>
-            <label htmlFor="rod">Род подвижного состава: </label>
             <input id="rod"  name="rod"
+            className="form-control"
+            placeholder="Род подвижного состава: "
               value={this.state.rod}
               onChange={this.onrodChange} required
             />
           </div>
              <div>
-            <label htmlFor="distance">Расстояние рейса: </label>
             <input id="distance"  name="distance"
+            className="form-control"
+            placeholder="Расстояние рейса: "
               value={this.state.distance}
               onChange={this.ondistanceChange} required
             />
           </div>
              <div>
-            <label htmlFor="snd_org_id">id грузоотправителя: </label>
             <input id="snd_org_id"  name="snd_org_id"
+            className="form-control"
+            placeholder="id грузоотправителя: "
               value={this.state.snd_org_id}
               onChange={this.onsnd_org_idChange} required
             />
           </div>
              <div>
-            <label htmlFor="rsv_org_id">id грузополучателя: </label>
             <input id="rsv_org_id"  name="rsv_org_id"
+            className="form-control"
+            placeholder="id грузополучателя: "
               value={this.state.rsv_org_id}
               onChange={this.onrsv_org_idChange} required
             />
           </div>
              <div>
-            <label htmlFor="snd_roadid">id дороги отправления: </label>
             <input id="snd_roadid"  name="snd_roadid"
+            className="form-control"
+            placeholder="id дороги отправления: "
               value={this.state.snd_roadid}
               onChange={this.onsnd_roadidChange} required
             />
           </div>
              <div>
-            <label htmlFor="rsv_roadid">id дороги назначения: </label>
             <input id="rsv_roadid"  name="rsv_roadid"
+            className="form-control"
+            placeholder="id дороги назначения: "
               value={this.state.rsv_roadid}
               onChange={this.onrsv_roadidChange} required
             />
           </div>
              <div>
-            <label htmlFor="snd_dp_id">id региона отправления: </label>
             <input id="snd_dp_id"  name="snd_dp_id"
+            className="form-control"
+            placeholder="id региона отправления: "
               value={this.state.snd_dp_id}
               onChange={this.onsnd_dp_idChange} required
             />
           </div>
                   <div>
-            <label htmlFor="rsv_dp_id">id региона назначения: </label>
             <input id="rsv_dp_id"  name="rsv_dp_id"
+            className="form-control"
+            placeholder="id региона назначения: "
               value={this.state.rsv_dp_id}
               onChange={this.onrsv_dp_idChange} required
             />
           </div>
           <button className="app-btn double-border-button count btn" type="submit">Рассчитать</button>
+          <button className="app-btn double-border-button count btn" type="submit">Скачать файл</button>
         </form>
-        <h4 className='result'>Ориентировачное время: {articleId}ч</h4>
+        <h4 className='result'>Ориентировочное время: {articleId}ч</h4>
       </div>
     );
   }
