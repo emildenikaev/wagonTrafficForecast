@@ -274,6 +274,7 @@ class Time extends Component {
           </div>
           <button className="app-btn double-border-button count btn" type="submit">Рассчитать</button>
           <button className="app-btn double-border-button count btn" type="submit">Скачать файл</button>
+          <button className="app-btn double-border-button count btn" type="submit">Загрузить файл</button>
         </form>
         <h4 className='result'>Ориентировочное время: {articleId}ч</h4>
       </div>
